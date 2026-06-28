@@ -1,0 +1,168 @@
+[
+  {
+    "city": "San Francisco",
+    "scenario_name": "洛杉矶用户的旧金山休闲之旅",
+    "algorithm_type": "CrossCityLLMCPR",
+    "query_input": {
+      "source_city": "Los Angeles",
+      "target_city": "San Francisco",
+      "num_pois": 5,
+      "start_time": 10,
+      "end_time": 19
+    },
+    "route_result": {
+      "route": [
+        {
+          "poi_id": 3201,
+          "name": "金门公园 (Golden Gate Park)",
+          "category": "Park",
+          "latitude": 37.7694,
+          "longitude": -122.4862,
+          "recommended_duration_min": 75,
+          "visit_order": 1
+        },
+        {
+          "poi_id": 3202,
+          "name": "艺术宫 (Palace of Fine Arts)",
+          "category": "Landmark",
+          "latitude": 37.8029,
+          "longitude": -122.4484,
+          "recommended_duration_min": 45,
+          "visit_order": 2
+        },
+        {
+          "poi_id": 3203,
+          "name": "索萨利托观景点 (Sausalito Viewpoint)",
+          "category": "Viewpoint",
+          "latitude": 37.8590,
+          "longitude": -122.4852,
+          "recommended_duration_min": 50,
+          "visit_order": 3
+        },
+        {
+          "poi_id": 3204,
+          "name": "普雷西迪奥公园 (Presidio)",
+          "category": "National Park",
+          "latitude": 37.7989,
+          "longitude": -122.4662,
+          "recommended_duration_min": 60,
+          "visit_order": 4
+        },
+        {
+          "poi_id": 3205,
+          "name": "贝克海滩 (Baker Beach)",
+          "category": "Beach",
+          "latitude": 37.7936,
+          "longitude": -122.4835,
+          "recommended_duration_min": 40,
+          "visit_order": 5
+        }
+      ]
+    },
+    "intent_data": {
+      "preference_factors": {
+        "factor_1": {"weight": 0.15, "label": "文化探索"},
+        "factor_2": {"weight": 0.22, "label": "自然风光"},
+        "factor_3": {"weight": 0.20, "label": "美食体验"},
+        "factor_4": {"weight": 0.43, "label": "休闲购物"}
+      },
+      "transfer_weights": {
+        "factor_1_alpha": 0.12,
+        "factor_2_alpha": 0.23,
+        "factor_3_alpha": 0.20,
+        "factor_4_alpha": 0.45
+      },
+      "city_group_preference": {
+        "cultural": 0.12,
+        "nature": 0.25,
+        "food": 0.15,
+        "shopping": 0.48
+      },
+      "reliability_score": 0.70,
+      "blend_weight_eta": 0.58
+    }
+  },
+  {
+    "city": "San Francisco",
+    "scenario_name": "洛杉矶用户的旧金山文化探索",
+    "algorithm_type": "CrossCityLLMCPR",
+    "query_input": {
+      "source_city": "Los Angeles",
+      "target_city": "San Francisco",
+      "num_pois": 5,
+      "start_time": 9,
+      "end_time": 18
+    },
+    "route_result": {
+      "route": [
+        {
+          "poi_id": 3206,
+          "name": "旧金山现代艺术博物馆 (SFMOMA)",
+          "category": "Art Museum",
+          "latitude": 37.7857,
+          "longitude": -122.4011,
+          "recommended_duration_min": 75,
+          "visit_order": 1
+        },
+        {
+          "poi_id": 3207,
+          "name": "亚洲艺术博物馆 (Asian Art Museum)",
+          "category": "Museum",
+          "latitude": 37.7802,
+          "longitude": -122.4163,
+          "recommended_duration_min": 60,
+          "visit_order": 2
+        },
+        {
+          "poi_id": 3208,
+          "name": "笛洋美术馆 (de Young Museum)",
+          "category": "Art Museum",
+          "latitude": 37.7715,
+          "longitude": -122.4686,
+          "recommended_duration_min": 70,
+          "visit_order": 3
+        },
+        {
+          "poi_id": 3209,
+          "name": "探索博物馆 (Exploratorium)",
+          "category": "Science Museum",
+          "latitude": 37.8017,
+          "longitude": -122.3975,
+          "recommended_duration_min": 60,
+          "visit_order": 4
+        },
+        {
+          "poi_id": 3210,
+          "name": "缆车博物馆 (Cable Car Museum)",
+          "category": "Museum",
+          "latitude": 37.7946,
+          "longitude": -122.4115,
+          "recommended_duration_min": 40,
+          "visit_order": 5
+        }
+      ]
+    },
+    "intent_data": {
+      "preference_factors": {
+        "factor_1": {"weight": 0.45, "label": "文化探索"},
+        "factor_2": {"weight": 0.18, "label": "自然风光"},
+        "factor_3": {"weight": 0.22, "label": "美食体验"},
+        "factor_4": {"weight": 0.15, "label": "休闲购物"}
+      },
+      "transfer_weights": {
+        "factor_1_alpha": 0.48,
+        "factor_2_alpha": 0.18,
+        "factor_3_alpha": 0.20,
+        "factor_4_alpha": 0.14
+      },
+      "city_group_preference": {
+        "cultural": 0.52,
+        "nature": 0.18,
+        "food": 0.20,
+        "shopping": 0.10
+      },
+      "reliability_score": 0.74,
+      "blend_weight_eta": 0.67
+    }
+  }
+]

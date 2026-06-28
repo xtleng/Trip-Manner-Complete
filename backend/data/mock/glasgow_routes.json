@@ -1,0 +1,176 @@
+[
+  {
+    "city": "Glasgow",
+    "scenario_name": "格拉斯哥半日游 - U型模式",
+    "algorithm_type": "EKD-Trip",
+    "query_input": {
+      "start_poi": "Glasgow Central Station",
+      "end_poi": "Glasgow Cathedral",
+      "start_time": 10,
+      "end_time": 15,
+      "num_pois": 4
+    },
+    "route_result": {
+      "route": [
+        {
+          "poi_id": 2001,
+          "name": "格拉斯哥大教堂 (Glasgow Cathedral)",
+          "category": "Cathedral",
+          "latitude": 55.8624,
+          "longitude": -4.2335,
+          "recommended_duration_min": 45,
+          "visit_order": 1
+        },
+        {
+          "poi_id": 2002,
+          "name": "凯尔文格罗夫美术馆 (Kelvingrove Art Gallery)",
+          "category": "Museum",
+          "latitude": 55.8688,
+          "longitude": -4.2903,
+          "recommended_duration_min": 60,
+          "visit_order": 2
+        },
+        {
+          "poi_id": 2003,
+          "name": "格拉斯哥大学 (University of Glasgow)",
+          "category": "University",
+          "latitude": 55.8722,
+          "longitude": -4.2882,
+          "recommended_duration_min": 40,
+          "visit_order": 3
+        },
+        {
+          "poi_id": 2004,
+          "name": "乔治广场 (George Square)",
+          "category": "Square",
+          "latitude": 55.8610,
+          "longitude": -4.2500,
+          "recommended_duration_min": 30,
+          "visit_order": 4
+        }
+      ]
+    },
+    "intent_data": {
+      "travel_mode": "u_turn",
+      "travel_mode_confidence": 0.86,
+      "distance_to_destination_curve": [1.3, 3.8, 4.1, 1.2],
+      "query_representation_similarity": 0.80
+    }
+  },
+  {
+    "city": "Glasgow",
+    "scenario_name": "格拉斯哥文化之旅 - 接近模式",
+    "algorithm_type": "EKD-Trip",
+    "query_input": {
+      "start_poi": "Riverside Museum",
+      "end_poi": "Glasgow Green",
+      "start_time": 9,
+      "end_time": 17,
+      "num_pois": 4
+    },
+    "route_result": {
+      "route": [
+        {
+          "poi_id": 2005,
+          "name": "河畔博物馆 (Riverside Museum)",
+          "category": "Museum",
+          "latitude": 55.8653,
+          "longitude": -4.3065,
+          "recommended_duration_min": 60,
+          "visit_order": 1
+        },
+        {
+          "poi_id": 2006,
+          "name": "植物园 (Botanic Gardens)",
+          "category": "Garden",
+          "latitude": 55.8787,
+          "longitude": -4.2896,
+          "recommended_duration_min": 45,
+          "visit_order": 2
+        },
+        {
+          "poi_id": 2007,
+          "name": "乔治广场 (George Square)",
+          "category": "Square",
+          "latitude": 55.8610,
+          "longitude": -4.2500,
+          "recommended_duration_min": 30,
+          "visit_order": 3
+        },
+        {
+          "poi_id": 2008,
+          "name": "格拉斯哥绿地 (Glasgow Green)",
+          "category": "Park",
+          "latitude": 55.8498,
+          "longitude": -4.2359,
+          "recommended_duration_min": 40,
+          "visit_order": 4
+        }
+      ]
+    },
+    "intent_data": {
+      "travel_mode": "approaching",
+      "travel_mode_confidence": 0.82,
+      "distance_to_destination_curve": [5.6, 4.3, 1.5, 0.2],
+      "query_representation_similarity": 0.77
+    }
+  },
+  {
+    "city": "Glasgow",
+    "scenario_name": "格拉斯哥随心游 - 不规则模式",
+    "algorithm_type": "EKD-Trip",
+    "query_input": {
+      "start_poi": "People's Palace",
+      "end_poi": "Pollok House",
+      "start_time": 10,
+      "end_time": 18,
+      "num_pois": 4
+    },
+    "route_result": {
+      "route": [
+        {
+          "poi_id": 2009,
+          "name": "人民宫殿 (People's Palace)",
+          "category": "Museum",
+          "latitude": 55.8494,
+          "longitude": -4.2371,
+          "recommended_duration_min": 50,
+          "visit_order": 1
+        },
+        {
+          "poi_id": 2010,
+          "name": "商人城 (Merchant City)",
+          "category": "Historic District",
+          "latitude": 55.8580,
+          "longitude": -4.2440,
+          "recommended_duration_min": 40,
+          "visit_order": 2
+        },
+        {
+          "poi_id": 2011,
+          "name": "西区 (West End)",
+          "category": "Cultural District",
+          "latitude": 55.8750,
+          "longitude": -4.2930,
+          "recommended_duration_min": 50,
+          "visit_order": 3
+        },
+        {
+          "poi_id": 2012,
+          "name": "波洛克庄园 (Pollok House)",
+          "category": "Historic House",
+          "latitude": 55.8266,
+          "longitude": -4.3162,
+          "recommended_duration_min": 45,
+          "visit_order": 4
+        }
+      ]
+    },
+    "intent_data": {
+      "travel_mode": "irregular",
+      "travel_mode_confidence": 0.62,
+      "distance_to_destination_curve": [6.8, 5.4, 3.1, 7.5],
+      "query_representation_similarity": 0.58
+    }
+  }
+]

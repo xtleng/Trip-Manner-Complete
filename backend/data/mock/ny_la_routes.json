@@ -1,0 +1,168 @@
+[
+  {
+    "city": "Los Angeles",
+    "scenario_name": "纽约用户的洛杉矶文化之旅",
+    "algorithm_type": "CrossCityLLMCPR",
+    "query_input": {
+      "source_city": "New York",
+      "target_city": "Los Angeles",
+      "num_pois": 5,
+      "start_time": 9,
+      "end_time": 19
+    },
+    "route_result": {
+      "route": [
+        {
+          "poi_id": 3001,
+          "name": "盖蒂中心 (Getty Center)",
+          "category": "Museum",
+          "latitude": 34.0780,
+          "longitude": -118.4741,
+          "recommended_duration_min": 90,
+          "visit_order": 1
+        },
+        {
+          "poi_id": 3002,
+          "name": "洛杉矶县艺术博物馆 (LACMA)",
+          "category": "Art Museum",
+          "latitude": 34.0639,
+          "longitude": -118.3592,
+          "recommended_duration_min": 75,
+          "visit_order": 2
+        },
+        {
+          "poi_id": 3003,
+          "name": "好莱坞星光大道 (Hollywood Walk of Fame)",
+          "category": "Landmark",
+          "latitude": 34.1016,
+          "longitude": -118.3267,
+          "recommended_duration_min": 45,
+          "visit_order": 3
+        },
+        {
+          "poi_id": 3004,
+          "name": "格里菲斯天文台 (Griffith Observatory)",
+          "category": "Observatory",
+          "latitude": 34.1184,
+          "longitude": -118.3004,
+          "recommended_duration_min": 60,
+          "visit_order": 4
+        },
+        {
+          "poi_id": 3005,
+          "name": "沃尔特·迪士尼音乐厅 (Walt Disney Concert Hall)",
+          "category": "Concert Hall",
+          "latitude": 34.0553,
+          "longitude": -118.2498,
+          "recommended_duration_min": 45,
+          "visit_order": 5
+        }
+      ]
+    },
+    "intent_data": {
+      "preference_factors": {
+        "factor_1": {"weight": 0.35, "label": "文化探索"},
+        "factor_2": {"weight": 0.25, "label": "自然风光"},
+        "factor_3": {"weight": 0.22, "label": "美食体验"},
+        "factor_4": {"weight": 0.18, "label": "休闲购物"}
+      },
+      "transfer_weights": {
+        "factor_1_alpha": 0.40,
+        "factor_2_alpha": 0.30,
+        "factor_3_alpha": 0.20,
+        "factor_4_alpha": 0.10
+      },
+      "city_group_preference": {
+        "cultural": 0.55,
+        "nature": 0.25,
+        "food": 0.12,
+        "shopping": 0.08
+      },
+      "reliability_score": 0.72,
+      "blend_weight_eta": 0.65
+    }
+  },
+  {
+    "city": "Los Angeles",
+    "scenario_name": "纽约用户的洛杉矶自然探索",
+    "algorithm_type": "CrossCityLLMCPR",
+    "query_input": {
+      "source_city": "New York",
+      "target_city": "Los Angeles",
+      "num_pois": 5,
+      "start_time": 8,
+      "end_time": 18
+    },
+    "route_result": {
+      "route": [
+        {
+          "poi_id": 3006,
+          "name": "鲁尼恩峡谷 (Runyon Canyon)",
+          "category": "Hiking Trail",
+          "latitude": 34.1060,
+          "longitude": -118.3488,
+          "recommended_duration_min": 75,
+          "visit_order": 1
+        },
+        {
+          "poi_id": 3007,
+          "name": "马里布海滩 (Malibu Beach)",
+          "category": "Beach",
+          "latitude": 34.0259,
+          "longitude": -118.7798,
+          "recommended_duration_min": 60,
+          "visit_order": 2
+        },
+        {
+          "poi_id": 3008,
+          "name": "格里菲斯公园 (Griffith Park)",
+          "category": "Park",
+          "latitude": 34.1365,
+          "longitude": -118.2943,
+          "recommended_duration_min": 90,
+          "visit_order": 3
+        },
+        {
+          "poi_id": 3009,
+          "name": "威尼斯海滩 (Venice Beach)",
+          "category": "Beach",
+          "latitude": 33.9850,
+          "longitude": -118.4695,
+          "recommended_duration_min": 50,
+          "visit_order": 4
+        },
+        {
+          "poi_id": 3010,
+          "name": "圣莫尼卡山脉 (Santa Monica Mountains)",
+          "category": "Nature Reserve",
+          "latitude": 34.0750,
+          "longitude": -118.6520,
+          "recommended_duration_min": 70,
+          "visit_order": 5
+        }
+      ]
+    },
+    "intent_data": {
+      "preference_factors": {
+        "factor_1": {"weight": 0.15, "label": "文化探索"},
+        "factor_2": {"weight": 0.40, "label": "自然风光"},
+        "factor_3": {"weight": 0.25, "label": "美食体验"},
+        "factor_4": {"weight": 0.20, "label": "休闲购物"}
+      },
+      "transfer_weights": {
+        "factor_1_alpha": 0.15,
+        "factor_2_alpha": 0.45,
+        "factor_3_alpha": 0.25,
+        "factor_4_alpha": 0.15
+      },
+      "city_group_preference": {
+        "cultural": 0.15,
+        "nature": 0.55,
+        "food": 0.18,
+        "shopping": 0.12
+      },
+      "reliability_score": 0.68,
+      "blend_weight_eta": 0.60
+    }
+  }
+]
