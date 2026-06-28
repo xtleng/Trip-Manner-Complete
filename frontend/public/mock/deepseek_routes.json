@@ -1,0 +1,233 @@
+[
+  {
+    "city": "北京",
+    "scenario_name": "北京文化探索一日游",
+    "algorithm_type": "DeepSeek-Agent",
+    "query_input": {
+      "destination_city": "北京",
+      "start_time": 8,
+      "end_time": 18,
+      "num_pois": 5
+    },
+    "route_result": {
+      "route": [
+        {
+          "poi_id": 5001,
+          "name": "天安门广场 (Tiananmen Square)",
+          "category": "历史地标",
+          "latitude": 39.9054,
+          "longitude": 116.3976,
+          "recommended_duration_min": 60,
+          "visit_order": 1,
+          "description": "世界上最大的城市广场之一，承载着中国近现代史的重要记忆。清晨可以观看升旗仪式，白天则可以感受广场的宏伟壮观。广场两侧分布着国家博物馆和人民大会堂，是了解中国政治文化的第一站。"
+        },
+        {
+          "poi_id": 5002,
+          "name": "故宫博物院 (Forbidden City)",
+          "category": "博物馆/宫殿",
+          "latitude": 39.9163,
+          "longitude": 116.3972,
+          "recommended_duration_min": 120,
+          "visit_order": 2,
+          "description": "紫禁城是世界上规模最大、保存最完整的古代宫殿建筑群，拥有近600年的历史。沿中轴线从午门走到神武门，可以依次参观太和殿、中和殿、保和殿等主要宫殿。建议提前网上预约门票，旺季容易售罄。"
+        },
+        {
+          "poi_id": 5003,
+          "name": "景山公园 (Jingshan Park)",
+          "category": "公园/观景点",
+          "latitude": 39.9253,
+          "longitude": 116.3963,
+          "recommended_duration_min": 45,
+          "visit_order": 3,
+          "description": "登上景山的万春亭，可以获得俯瞰故宫全貌的最佳视角。从这里望去，紫禁城金色的琉璃瓦顶在阳光下连成一片壮观的海洋。公园本身也是老北京人晨练和休闲的好去处，经常能听到戏曲爱好者的票友演唱。"
+        },
+        {
+          "poi_id": 5004,
+          "name": "南锣鼓巷 (Nanluoguxiang)",
+          "category": "文化街区",
+          "latitude": 39.9370,
+          "longitude": 116.4030,
+          "recommended_duration_min": 60,
+          "visit_order": 4,
+          "description": "这条有着740多年历史的胡同是北京最古老的街区之一，如今融合了传统与现代。主巷两侧的小胡同里藏着各式创意小店、咖啡馆和手工艺品店。在这里可以体验老北京的胡同文化，品尝各种特色小吃。"
+        },
+        {
+          "poi_id": 5005,
+          "name": "鸟巢/水立方 (Olympic Park)",
+          "category": "现代地标",
+          "latitude": 39.9929,
+          "longitude": 116.3966,
+          "recommended_duration_min": 50,
+          "visit_order": 5,
+          "description": "2008年奥运会的标志性建筑，鸟巢的钢结构外观和水立方的蓝色气泡墙至今仍令人震撼。夜晚灯光亮起时尤其壮观。奥林匹克公园的中心区域适合傍晚散步，周围还有多个体育场馆可以外观参观。"
+        }
+      ]
+    },
+    "intent_data": {
+      "agent_reasoning": [
+        "用户想探索北京文化景点",
+        "基于地理位置优化路线，从南到北依次游览",
+        "综合考虑各景点停留时间，确保8小时内完成",
+        "推荐经典文化路线，涵盖古代与现代地标"
+      ],
+      "confidence": 0.91,
+      "route_type": "文化探索",
+      "estimated_total_time_hours": 5.6,
+      "estimated_transport_time_min": 65
+    }
+  },
+  {
+    "city": "巴黎",
+    "scenario_name": "巴黎浪漫一日游",
+    "algorithm_type": "DeepSeek-Agent",
+    "query_input": {
+      "destination_city": "巴黎",
+      "start_time": 10,
+      "end_time": 20,
+      "num_pois": 5
+    },
+    "route_result": {
+      "route": [
+        {
+          "poi_id": 6001,
+          "name": "埃菲尔铁塔 (Eiffel Tower)",
+          "category": "地标",
+          "latitude": 48.8584,
+          "longitude": 2.2945,
+          "recommended_duration_min": 75,
+          "visit_order": 1,
+          "description": "巴黎的象征，这座铁质镂空塔高324米。建议登上二层平台（115米），这里视野最佳且排队时间相对较短。塔下的战神广场是野餐的好地方，春天的樱花和秋天的金叶为铁塔增添了浪漫氛围。"
+        },
+        {
+          "poi_id": 6002,
+          "name": "卢浮宫 (Louvre Museum)",
+          "category": "艺术博物馆",
+          "latitude": 48.8606,
+          "longitude": 2.3376,
+          "recommended_duration_min": 120,
+          "visit_order": 2,
+          "description": "世界上最大的艺术博物馆，收藏超过38万件艺术品。即使只是走马观花也至少需要2小时。必看三大镇馆之宝：蒙娜丽莎、胜利女神像和断臂维纳斯。玻璃金字塔入口本身也是经典的拍照地点。"
+        },
+        {
+          "poi_id": 6003,
+          "name": "巴黎圣母院 (Notre-Dame)",
+          "category": "大教堂",
+          "latitude": 48.8530,
+          "longitude": 2.3499,
+          "recommended_duration_min": 45,
+          "visit_order": 3,
+          "description": "这座哥特式建筑的杰作正在经历修复重建，但其宏伟的外观仍然值得驻足欣赏。站在西岱岛上，可以看到飞扶壁和尖顶的优美轮廓。周围的塞纳河畔适合散步，河边的旧书摊也别有一番巴黎味道。"
+        },
+        {
+          "poi_id": 6004,
+          "name": "蒙马特高地 (Montmartre)",
+          "category": "历史街区",
+          "latitude": 48.8867,
+          "longitude": 2.3431,
+          "recommended_duration_min": 60,
+          "visit_order": 4,
+          "description": "曾经是印象派画家们的聚集地，如今仍保留着浓厚的艺术气息。小丘广场上画家们现场作画，蜿蜒的石板路两旁是色彩斑斓的小店。登上圣心大教堂的台阶，整个巴黎尽收眼底，是欣赏日落的绝佳地点。"
+        },
+        {
+          "poi_id": 6005,
+          "name": "香榭丽舍大街 (Champs-Élysées)",
+          "category": "林荫大道/购物",
+          "latitude": 48.8698,
+          "longitude": 2.3075,
+          "recommended_duration_min": 50,
+          "visit_order": 5,
+          "description": "被誉为\"世界上最美的大街\"，从协和广场延伸至凯旋门。两侧咖啡馆、精品店和剧院林立。在傍晚时分沿着林荫道慢慢步行，最后在凯旋门前结束一天的行程，感受巴黎的优雅与浪漫。"
+        }
+      ]
+    },
+    "intent_data": {
+      "agent_reasoning": [
+        "用户希望体验巴黎浪漫氛围",
+        "选择标志性景点确保首次游览体验完整",
+        "路线按地理位置优化，减少交通时间",
+        "涵盖艺术、建筑、文化多种体验"
+      ],
+      "confidence": 0.88,
+      "route_type": "浪漫文化",
+      "estimated_total_time_hours": 5.8,
+      "estimated_transport_time_min": 75
+    }
+  },
+  {
+    "city": "曼谷",
+    "scenario_name": "曼谷寺庙美食一日游",
+    "algorithm_type": "DeepSeek-Agent",
+    "query_input": {
+      "destination_city": "曼谷",
+      "start_time": 9,
+      "end_time": 20,
+      "num_pois": 5
+    },
+    "route_result": {
+      "route": [
+        {
+          "poi_id": 7001,
+          "name": "大皇宫 (Grand Palace)",
+          "category": "宫殿",
+          "latitude": 13.7500,
+          "longitude": 100.4913,
+          "recommended_duration_min": 90,
+          "visit_order": 1,
+          "description": "曼谷最壮观的古建筑群，金碧辉煌的殿宇和精美的壁画让人叹为观止。玉佛寺就位于宫殿区域内，供奉着泰国最神圣的玉佛。注意着装要求：需长裤长袖，门口有免费借用的服装。建议上午趁凉爽时到访。"
+        },
+        {
+          "poi_id": 7002,
+          "name": "卧佛寺 (Wat Pho)",
+          "category": "寺庙",
+          "latitude": 13.7465,
+          "longitude": 100.4930,
+          "recommended_duration_min": 60,
+          "visit_order": 2,
+          "description": "距大皇宫仅步行5分钟，这里有一尊长46米、高15米的巨大卧佛像，佛足底部镶嵌着108个吉祥图案。寺内还有泰国最古老的按摩学校，游览后可以体验正宗的泰式按摩放松一下。"
+        },
+        {
+          "poi_id": 7003,
+          "name": "考山路 (Khao San Road)",
+          "category": "街区",
+          "latitude": 13.7589,
+          "longitude": 100.4974,
+          "recommended_duration_min": 45,
+          "visit_order": 3,
+          "description": "全球背包客的聚集地，虽然只有400米长，但两旁挤满了旅舍、酒吧、小吃摊和纪念品店。白天可以品尝芒果糯米饭、烤肉串等街头小吃，晚上则变成热闹的夜生活区。这里是体验曼谷多元文化的窗口。"
+        },
+        {
+          "poi_id": 7004,
+          "name": "暹罗广场 (Siam Square)",
+          "category": "购物区",
+          "latitude": 13.7453,
+          "longitude": 100.5346,
+          "recommended_duration_min": 50,
+          "visit_order": 4,
+          "description": "曼谷的时尚中心，多座大型商场汇集于此。Siam Paragon、Central World和MBK Center能满足各种购物需求。周围还有许多平价泰国设计师品牌和潮流小店，是购买伴手礼的好地方。"
+        },
+        {
+          "poi_id": 7005,
+          "name": "拉差达火车夜市 (Ratchada Train Night Market)",
+          "category": "夜市",
+          "latitude": 13.7649,
+          "longitude": 100.5733,
+          "recommended_duration_min": 70,
+          "visit_order": 5,
+          "description": "曼谷最具人气的夜市之一，每到夜晚就会亮起五彩斑斓的帐篷灯光。这里有海鲜大排档、创意鸡尾酒和各种泰国小吃。从旁边商场的停车楼顶层可以拍到夜市的经典俯瞰照，五颜六色的帐篷像宝石一样闪耀。"
+        }
+      ]
+    },
+    "intent_data": {
+      "agent_reasoning": [
+        "用户想去曼谷游玩，该城市不在核心算法数据集中",
+        "启用AI Agent模式，基于通用知识规划路线",
+        "按地理位置从老城区到现代商业区再到夜市排列",
+        "兼顾文化体验、美食和购物需求，适合一日游"
+      ],
+      "confidence": 0.85,
+      "route_type": "寺庙美食",
+      "estimated_total_time_hours": 5.3,
+      "estimated_transport_time_min": 55
+    }
+  }
+]

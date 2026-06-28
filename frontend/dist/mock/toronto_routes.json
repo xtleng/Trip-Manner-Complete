@@ -1,0 +1,194 @@
+[
+  {
+    "city": "Toronto",
+    "scenario_name": "多伦多经典一日游 - 接近模式",
+    "algorithm_type": "EKD-Trip",
+    "query_input": {
+      "start_poi": "CN Tower",
+      "end_poi": "Toronto Islands Ferry Terminal",
+      "start_time": 9,
+      "end_time": 19,
+      "num_pois": 5
+    },
+    "route_result": {
+      "route": [
+        {
+          "poi_id": 2101,
+          "name": "加拿大国家电视塔 (CN Tower)",
+          "category": "Landmark",
+          "latitude": 43.6426,
+          "longitude": -79.3871,
+          "recommended_duration_min": 60,
+          "visit_order": 1
+        },
+        {
+          "poi_id": 2102,
+          "name": "里普利水族馆 (Ripley's Aquarium)",
+          "category": "Aquarium",
+          "latitude": 43.6424,
+          "longitude": -79.3860,
+          "recommended_duration_min": 75,
+          "visit_order": 2
+        },
+        {
+          "poi_id": 2103,
+          "name": "圣劳伦斯市场 (St Lawrence Market)",
+          "category": "Market",
+          "latitude": 43.6489,
+          "longitude": -79.3714,
+          "recommended_duration_min": 50,
+          "visit_order": 3
+        },
+        {
+          "poi_id": 2104,
+          "name": "酿酒厂区 (Distillery District)",
+          "category": "Historic District",
+          "latitude": 43.6503,
+          "longitude": -79.3596,
+          "recommended_duration_min": 45,
+          "visit_order": 4
+        },
+        {
+          "poi_id": 2105,
+          "name": "多伦多群岛渡轮码头 (Toronto Islands Ferry Terminal)",
+          "category": "Transportation Hub",
+          "latitude": 43.6408,
+          "longitude": -79.3768,
+          "recommended_duration_min": 30,
+          "visit_order": 5
+        }
+      ]
+    },
+    "intent_data": {
+      "travel_mode": "approaching",
+      "travel_mode_confidence": 0.84,
+      "distance_to_destination_curve": [3.5, 2.8, 1.6, 1.1, 0.2],
+      "query_representation_similarity": 0.81
+    }
+  },
+  {
+    "city": "Toronto",
+    "scenario_name": "多伦多探索之旅 - 远离模式",
+    "algorithm_type": "EKD-Trip",
+    "query_input": {
+      "start_poi": "Royal Ontario Museum",
+      "end_poi": "Ontario Science Centre",
+      "start_time": 9,
+      "end_time": 18,
+      "num_pois": 4
+    },
+    "route_result": {
+      "route": [
+        {
+          "poi_id": 2106,
+          "name": "皇家安大略博物馆 (Royal Ontario Museum)",
+          "category": "Museum",
+          "latitude": 43.6677,
+          "longitude": -79.3948,
+          "recommended_duration_min": 90,
+          "visit_order": 1
+        },
+        {
+          "poi_id": 2107,
+          "name": "卡萨罗马城堡 (Casa Loma)",
+          "category": "Castle",
+          "latitude": 43.6780,
+          "longitude": -79.4094,
+          "recommended_duration_min": 60,
+          "visit_order": 2
+        },
+        {
+          "poi_id": 2108,
+          "name": "高地公园 (High Park)",
+          "category": "Park",
+          "latitude": 43.6465,
+          "longitude": -79.4637,
+          "recommended_duration_min": 50,
+          "visit_order": 3
+        },
+        {
+          "poi_id": 2109,
+          "name": "安大略科学中心 (Ontario Science Centre)",
+          "category": "Science Museum",
+          "latitude": 43.7166,
+          "longitude": -79.3389,
+          "recommended_duration_min": 75,
+          "visit_order": 4
+        }
+      ]
+    },
+    "intent_data": {
+      "travel_mode": "moving_away",
+      "travel_mode_confidence": 0.79,
+      "distance_to_destination_curve": [0.4, 2.1, 5.8, 8.3],
+      "query_representation_similarity": 0.73
+    }
+  },
+  {
+    "city": "Toronto",
+    "scenario_name": "多伦多文化路线 - U型模式",
+    "algorithm_type": "EKD-Trip",
+    "query_input": {
+      "start_poi": "Art Gallery of Ontario",
+      "end_poi": "Eaton Centre",
+      "start_time": 10,
+      "end_time": 20,
+      "num_pois": 5
+    },
+    "route_result": {
+      "route": [
+        {
+          "poi_id": 2110,
+          "name": "安大略美术馆 (Art Gallery of Ontario)",
+          "category": "Art Gallery",
+          "latitude": 43.6536,
+          "longitude": -79.3925,
+          "recommended_duration_min": 75,
+          "visit_order": 1
+        },
+        {
+          "poi_id": 2111,
+          "name": "唐人街 (Chinatown)",
+          "category": "Cultural District",
+          "latitude": 43.6525,
+          "longitude": -79.3975,
+          "recommended_duration_min": 40,
+          "visit_order": 2
+        },
+        {
+          "poi_id": 2112,
+          "name": "肯辛顿市场 (Kensington Market)",
+          "category": "Market",
+          "latitude": 43.6545,
+          "longitude": -79.4008,
+          "recommended_duration_min": 45,
+          "visit_order": 3
+        },
+        {
+          "poi_id": 2113,
+          "name": "皇后西街 (Queen Street West)",
+          "category": "Shopping District",
+          "latitude": 43.6487,
+          "longitude": -79.4022,
+          "recommended_duration_min": 40,
+          "visit_order": 4
+        },
+        {
+          "poi_id": 2114,
+          "name": "伊顿中心 (Eaton Centre)",
+          "category": "Shopping Mall",
+          "latitude": 43.6544,
+          "longitude": -79.3807,
+          "recommended_duration_min": 50,
+          "visit_order": 5
+        }
+      ]
+    },
+    "intent_data": {
+      "travel_mode": "u_turn",
+      "travel_mode_confidence": 0.82,
+      "distance_to_destination_curve": [1.0, 1.5, 1.8, 1.9, 0.3],
+      "query_representation_similarity": 0.77
+    }
+  }
+]

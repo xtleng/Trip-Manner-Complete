@@ -1,0 +1,168 @@
+[
+  {
+    "city": "San Francisco",
+    "scenario_name": "纽约用户的旧金山美食之旅",
+    "algorithm_type": "CrossTrip",
+    "query_input": {
+      "source_city": "New York",
+      "target_city": "San Francisco",
+      "num_pois": 5,
+      "start_time": 10,
+      "end_time": 21
+    },
+    "route_result": {
+      "route": [
+        {
+          "poi_id": 3101,
+          "name": "渡轮大厦 (Ferry Building)",
+          "category": "Market",
+          "latitude": 37.7955,
+          "longitude": -122.3937,
+          "recommended_duration_min": 60,
+          "visit_order": 1
+        },
+        {
+          "poi_id": 3102,
+          "name": "渔人码头 (Fisherman's Wharf)",
+          "category": "Tourist Area",
+          "latitude": 37.8080,
+          "longitude": -122.4177,
+          "recommended_duration_min": 50,
+          "visit_order": 2
+        },
+        {
+          "poi_id": 3103,
+          "name": "旧金山唐人街 (Chinatown SF)",
+          "category": "Cultural District",
+          "latitude": 37.7941,
+          "longitude": -122.4078,
+          "recommended_duration_min": 45,
+          "visit_order": 3
+        },
+        {
+          "poi_id": 3104,
+          "name": "教会区 (Mission District)",
+          "category": "Cultural District",
+          "latitude": 37.7599,
+          "longitude": -122.4148,
+          "recommended_duration_min": 55,
+          "visit_order": 4
+        },
+        {
+          "poi_id": 3105,
+          "name": "北滩 (North Beach)",
+          "category": "Cultural District",
+          "latitude": 37.8060,
+          "longitude": -122.4103,
+          "recommended_duration_min": 45,
+          "visit_order": 5
+        }
+      ]
+    },
+    "intent_data": {
+      "preference_factors": {
+        "factor_1": {"weight": 0.18, "label": "文化探索"},
+        "factor_2": {"weight": 0.15, "label": "自然风光"},
+        "factor_3": {"weight": 0.42, "label": "美食体验"},
+        "factor_4": {"weight": 0.25, "label": "休闲购物"}
+      },
+      "transfer_weights": {
+        "factor_1_alpha": 0.15,
+        "factor_2_alpha": 0.10,
+        "factor_3_alpha": 0.50,
+        "factor_4_alpha": 0.25
+      },
+      "city_group_preference": {
+        "cultural": 0.18,
+        "nature": 0.10,
+        "food": 0.55,
+        "shopping": 0.17
+      },
+      "reliability_score": 0.75,
+      "blend_weight_eta": 0.62
+    }
+  },
+  {
+    "city": "San Francisco",
+    "scenario_name": "纽约用户的旧金山综合体验",
+    "algorithm_type": "CrossTrip",
+    "query_input": {
+      "source_city": "New York",
+      "target_city": "San Francisco",
+      "num_pois": 5,
+      "start_time": 9,
+      "end_time": 19
+    },
+    "route_result": {
+      "route": [
+        {
+          "poi_id": 3106,
+          "name": "金门大桥 (Golden Gate Bridge)",
+          "category": "Landmark",
+          "latitude": 37.8199,
+          "longitude": -122.4783,
+          "recommended_duration_min": 60,
+          "visit_order": 1
+        },
+        {
+          "poi_id": 3107,
+          "name": "恶魔岛码头 (Alcatraz - Pier 33)",
+          "category": "Historic Site",
+          "latitude": 37.8087,
+          "longitude": -122.4098,
+          "recommended_duration_min": 90,
+          "visit_order": 2
+        },
+        {
+          "poi_id": 3108,
+          "name": "九曲花街 (Lombard Street)",
+          "category": "Landmark",
+          "latitude": 37.8021,
+          "longitude": -122.4187,
+          "recommended_duration_min": 30,
+          "visit_order": 3
+        },
+        {
+          "poi_id": 3109,
+          "name": "联合广场 (Union Square)",
+          "category": "Shopping District",
+          "latitude": 37.7879,
+          "longitude": -122.4074,
+          "recommended_duration_min": 45,
+          "visit_order": 4
+        },
+        {
+          "poi_id": 3110,
+          "name": "双子峰 (Twin Peaks)",
+          "category": "Viewpoint",
+          "latitude": 37.7544,
+          "longitude": -122.4477,
+          "recommended_duration_min": 40,
+          "visit_order": 5
+        }
+      ]
+    },
+    "intent_data": {
+      "preference_factors": {
+        "factor_1": {"weight": 0.28, "label": "文化探索"},
+        "factor_2": {"weight": 0.26, "label": "自然风光"},
+        "factor_3": {"weight": 0.24, "label": "美食体验"},
+        "factor_4": {"weight": 0.22, "label": "休闲购物"}
+      },
+      "transfer_weights": {
+        "factor_1_alpha": 0.28,
+        "factor_2_alpha": 0.27,
+        "factor_3_alpha": 0.25,
+        "factor_4_alpha": 0.20
+      },
+      "city_group_preference": {
+        "cultural": 0.30,
+        "nature": 0.28,
+        "food": 0.25,
+        "shopping": 0.17
+      },
+      "reliability_score": 0.78,
+      "blend_weight_eta": 0.70
+    }
+  }
+]

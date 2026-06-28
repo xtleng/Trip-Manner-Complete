@@ -1,0 +1,86 @@
+[
+  {
+    "id": "demo_ekd_tokyo",
+    "title": "东京一日游 (EKD-Trip)",
+    "algorithm": "EKD-Trip",
+    "description": "单城市路线规划，展示 EKD-Trip 算法的意图识别与路线推荐",
+    "conversation": [
+      { "role": "assistant", "content": "你好！我是 TripManner 旅行助手，可以为你规划旅行路线。告诉我你想去哪个城市，我来帮你安排行程吧！" },
+      { "role": "user", "content": "我想去东京玩" },
+      { "role": "assistant", "content": "好的！Tokyo是个很棒的选择~ 您计划什么时候出发，从哪个地点出发，到达哪个地点呢？比如\"从东京皇居出发，到东京晴空塔，早上9点到晚上6点\"" },
+      { "role": "user", "content": "我从东京皇居出发，到达东京晴空塔 (Tokyo Skytree)，我打算早上9点出发，晚上6点到达" },
+      { "role": "assistant", "content": "你想要在途中游览几个景点呢？（输入数字，或者说\"都可以\"让我帮你安排）" },
+      { "role": "user", "content": "都可以，你安排就好" },
+      { "role": "assistant", "content": "__STREAM__", "stream_config": { "city": "Tokyo", "algorithm": "EKD-Trip", "route_index": 0 } }
+    ]
+  },
+  {
+    "id": "demo_ekd_osaka",
+    "title": "大阪美食之旅 (EKD-Trip)",
+    "algorithm": "EKD-Trip",
+    "description": "单城市路线规划，展示 EKD-Trip 算法的远离模式",
+    "conversation": [
+      { "role": "assistant", "content": "你好！我是 TripManner 旅行助手，可以为你规划旅行路线。告诉我你想去哪个城市，我来帮你安排行程吧！" },
+      { "role": "user", "content": "我打算去大阪旅游" },
+      { "role": "assistant", "content": "好的！Osaka是个很棒的选择~ 您计划什么时候出发，从哪个地点出发，到达哪个地点呢？比如\"从东京皇居出发，到东京晴空塔，早上9点到晚上6点\"" },
+      { "role": "user", "content": "从大阪城公园出发，到通天阁，早上10点到晚上7点" },
+      { "role": "assistant", "content": "你想要在途中游览几个景点呢？（输入数字，或者说\"都可以\"让我帮你安排）" },
+      { "role": "user", "content": "5个景点" },
+      { "role": "assistant", "content": "__STREAM__", "stream_config": { "city": "Osaka", "algorithm": "EKD-Trip", "route_index": 0 } }
+    ]
+  },
+  {
+    "id": "demo_cross_ny_la",
+    "title": "纽约→洛杉矶跨城市 (CrossTrip)",
+    "algorithm": "CrossTrip",
+    "description": "跨城市推荐，展示 CrossTrip 算法的偏好迁移",
+    "conversation": [
+      { "role": "assistant", "content": "你好！我是 TripManner 旅行助手，可以为你规划旅行路线。告诉我你想去哪个城市，我来帮你安排行程吧！" },
+      { "role": "user", "content": "我想去洛杉矶玩" },
+      { "role": "assistant", "content": "好的！Los Angeles是个不错的城市~ 检测到您目前在New York，这将是一趟跨城市旅行。请问您打算从Los Angeles的哪里开始旅程，到达哪里呢？预期时间如何？比如\"从盖蒂中心出发，到迪士尼音乐厅，早上9点到晚上7点\"" },
+      { "role": "user", "content": "我想从盖蒂中心 (Getty Center)开始旅程，到达迪士尼音乐厅，我打算早上9点出发，晚上7点到达，经过5个景点即可" },
+      { "role": "assistant", "content": "__STREAM__", "stream_config": { "source_city": "New York", "city": "Los Angeles", "algorithm": "CrossTrip", "route_index": 0 } }
+    ]
+  },
+  {
+    "id": "demo_cross_ny_sf",
+    "title": "纽约→旧金山跨城市 (CrossTrip)",
+    "algorithm": "CrossTrip",
+    "description": "跨城市推荐，展示偏好迁移至旧金山场景",
+    "conversation": [
+      { "role": "assistant", "content": "你好！我是 TripManner 旅行助手，可以为你规划旅行路线。告诉我你想去哪个城市，我来帮你安排行程吧！" },
+      { "role": "user", "content": "我想去旧金山玩" },
+      { "role": "assistant", "content": "好的！San Francisco是个不错的城市~ 检测到您目前在New York，这将是一趟跨城市旅行。请问您打算从San Francisco的哪里开始旅程，到达哪里呢？预期时间如何？比如\"从盖蒂中心出发，到迪士尼音乐厅，早上9点到晚上7点\"" },
+      { "role": "user", "content": "从渔人码头出发，到金门大桥，早上8点到下午5点" },
+      { "role": "assistant", "content": "你想要在途中游览几个景点呢？（输入数字，或者说\"都可以\"让我帮你安排）" },
+      { "role": "user", "content": "4个就好" },
+      { "role": "assistant", "content": "__STREAM__", "stream_config": { "source_city": "New York", "city": "San Francisco", "algorithm": "CrossTrip", "route_index": 0 } }
+    ]
+  },
+  {
+    "id": "demo_deepseek_beijing",
+    "title": "北京文化之旅 (DeepSeek-Agent)",
+    "algorithm": "DeepSeek-Agent",
+    "description": "不在数据集中的城市，调用 DeepSeek Agent 生成路线",
+    "conversation": [
+      { "role": "assistant", "content": "你好！我是 TripManner 旅行助手，可以为你规划旅行路线。告诉我你想去哪个城市，我来帮你安排行程吧！" },
+      { "role": "user", "content": "我想去北京看看" },
+      { "role": "assistant", "content": "好的！北京是个很棒的选择~ 您计划什么时候出发，大概玩到几点呢？比如\"上午9点到晚上6点\"" },
+      { "role": "user", "content": "上午8点到晚上6点" },
+      { "role": "assistant", "content": "__STREAM__", "stream_config": { "city": "北京", "algorithm": "DeepSeek-Agent", "route_index": 0 } }
+    ]
+  },
+  {
+    "id": "demo_deepseek_bangkok",
+    "title": "曼谷寺庙美食游 (DeepSeek-Agent)",
+    "algorithm": "DeepSeek-Agent",
+    "description": "非数据集城市，调用 DeepSeek Agent 生成路线",
+    "conversation": [
+      { "role": "assistant", "content": "你好！我是 TripManner 旅行助手，可以为你规划旅行路线。告诉我你想去哪个城市，我来帮你安排行程吧！" },
+      { "role": "user", "content": "我想去曼谷玩" },
+      { "role": "assistant", "content": "好的！曼谷是个很棒的选择~ 您计划什么时候出发，大概玩到几点呢？比如\"上午9点到晚上6点\"" },
+      { "role": "user", "content": "上午9点到晚上8点" },
+      { "role": "assistant", "content": "__STREAM__", "stream_config": { "city": "曼谷", "algorithm": "DeepSeek-Agent", "route_index": 0 } }
+    ]
+  }
+]

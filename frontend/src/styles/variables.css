@@ -1,0 +1,15 @@
+:root {
+  --color-primary: #409EFF;
+  --color-success: #67C23A;
+  --color-warning: #E6A23C;
+  --color-danger: #F56C6C;
+
+  --color-approaching: #67C23A;
+  --color-moving-away: #E6A23C;
+  --color-u-turn: #409EFF;
+  --color-irregular: #909399;
+
+  --sidebar-width: 240px;
+  --navbar-height: 56px;
+  --intent-panel-height: 280px;
+}

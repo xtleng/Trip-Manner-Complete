@@ -1,0 +1,182 @@
+[
+  {
+    "city": "Los Angeles",
+    "scenario_name": "纽约用户的洛杉矶文化之旅",
+    "algorithm_type": "CrossTrip",
+    "query_input": {
+      "source_city": "New York",
+      "target_city": "Los Angeles",
+      "start_poi": "Getty Center",
+      "end_poi": "Walt Disney Concert Hall",
+      "num_pois": 5,
+      "start_time": 9,
+      "end_time": 19
+    },
+    "route_result": {
+      "route": [
+        {
+          "poi_id": 3001,
+          "name": "盖蒂中心 (Getty Center)",
+          "category": "博物馆",
+          "latitude": 34.0780,
+          "longitude": -118.4741,
+          "recommended_duration_min": 90,
+          "visit_order": 1,
+          "description": "作为一天的起点，盖蒂中心是完美的选择。这座世界级的艺术中心以其独特的现代建筑、精美的欧洲绘画收藏和广阔的花园而闻名。最重要的是，这里门票免费（但需提前预约），您可以悠闲地欣赏艺术品，还能俯瞰洛杉矶全景。建议上午前往，避开午后的人潮。"
+        },
+        {
+          "poi_id": 3002,
+          "name": "洛杉矶县艺术博物馆 (LACMA)",
+          "category": "艺术博物馆",
+          "latitude": 34.0639,
+          "longitude": -118.3592,
+          "recommended_duration_min": 75,
+          "visit_order": 2,
+          "description": "从盖蒂中心出发，前往洛杉矶最具代表性的博物馆群。LACMA最著名的标志是装置艺术\"城市之光\" (Urban Light)，那片由数十个复古路灯组成的森林是无数游客的打卡圣地。馆内收藏也非常丰富，涵盖了从古代到当代的全球艺术品。"
+        },
+        {
+          "poi_id": 3003,
+          "name": "好莱坞星光大道 (Hollywood Walk of Fame)",
+          "category": "地标",
+          "latitude": 34.1016,
+          "longitude": -118.3267,
+          "recommended_duration_min": 45,
+          "visit_order": 3,
+          "description": "感受完艺术气息后，前往好莱坞的心脏地带。在这条著名的街道上，您可以寻找您喜爱的电影明星、音乐人或卡通角色的星星。沿途还能看到杜比剧院（奥斯卡颁奖地）和TCL中国剧院，感受浓厚的电影文化氛围。"
+        },
+        {
+          "poi_id": 3004,
+          "name": "格里菲斯天文台 (Griffith Observatory)",
+          "category": "天文台",
+          "latitude": 34.1184,
+          "longitude": -118.3004,
+          "recommended_duration_min": 60,
+          "visit_order": 4,
+          "description": "这座洛杉矶的地标建筑是俯瞰城市全景的绝佳位置。您可以在这里远眺著名的\"HOLLYWOOD\"标志，探索宇宙的奥秘。如果时间允许，建议在傍晚时分抵达，欣赏天使之城从日落到华灯初上的壮丽夜景。"
+        },
+        {
+          "poi_id": 3005,
+          "name": "沃尔特·迪士尼音乐厅 (Walt Disney Concert Hall)",
+          "category": "音乐厅",
+          "latitude": 34.0553,
+          "longitude": -118.2498,
+          "recommended_duration_min": 45,
+          "visit_order": 5,
+          "description": "由著名建筑师弗兰克·盖里设计的这座音乐厅，本身就是一件杰出的解构主义艺术品。其独特的不锈钢外观在阳光下熠熠生辉。即使不入内听音乐会，其外部的BP步行桥和周围的花园也是欣赏其建筑之美的好去处，为一天的行程画上充满创意的句号。"
+        }
+      ]
+    },
+    "intent_data": {
+      "preference_factors": {
+        "factor_1": {"weight": 0.35, "label": "文化探索"},
+        "factor_2": {"weight": 0.25, "label": "自然风光"},
+        "factor_3": {"weight": 0.22, "label": "美食体验"},
+        "factor_4": {"weight": 0.18, "label": "休闲购物"}
+      },
+      "transfer_weights": {
+        "factor_1_alpha": 0.40,
+        "factor_2_alpha": 0.30,
+        "factor_3_alpha": 0.20,
+        "factor_4_alpha": 0.10
+      },
+      "city_group_preference": {
+        "cultural": 0.55,
+        "nature": 0.25,
+        "food": 0.12,
+        "shopping": 0.08
+      },
+      "reliability_score": 0.72,
+      "blend_weight_eta": 0.65
+    }
+  },
+  {
+    "city": "Los Angeles",
+    "scenario_name": "纽约用户的洛杉矶自然探索",
+    "algorithm_type": "CrossTrip",
+    "query_input": {
+      "source_city": "New York",
+      "target_city": "Los Angeles",
+      "start_poi": "Runyon Canyon",
+      "end_poi": "Santa Monica Mountains",
+      "num_pois": 5,
+      "start_time": 8,
+      "end_time": 18
+    },
+    "route_result": {
+      "route": [
+        {
+          "poi_id": 3006,
+          "name": "鲁尼恩峡谷 (Runyon Canyon)",
+          "category": "徒步小径",
+          "latitude": 34.1060,
+          "longitude": -118.3488,
+          "recommended_duration_min": 75,
+          "visit_order": 1,
+          "description": "洛杉矶最受欢迎的城市徒步路线之一，从好莱坞山脚出发，沿途可以俯瞰整个洛杉矶盆地。清晨时分空气清新，许多当地人带着爱犬来此晨练。山顶的观景点可以看到好莱坞标志和远处的太平洋。"
+        },
+        {
+          "poi_id": 3007,
+          "name": "马里布海滩 (Malibu Beach)",
+          "category": "海滩",
+          "latitude": 34.0259,
+          "longitude": -118.7798,
+          "recommended_duration_min": 60,
+          "visit_order": 2,
+          "description": "马里布是洛杉矶最美的海岸线之一，绵延数公里的金色沙滩面朝浩瀚太平洋。这里远离城市喧嚣，海浪声和海风是最好的背景音乐。沿着海边公路驾驶本身就是一种享受，途中可以停下来观赏海豚或冲浪爱好者。"
+        },
+        {
+          "poi_id": 3008,
+          "name": "格里菲斯公园 (Griffith Park)",
+          "category": "公园",
+          "latitude": 34.1365,
+          "longitude": -118.2943,
+          "recommended_duration_min": 90,
+          "visit_order": 3,
+          "description": "这座占地超过4000英亩的城市公园是北美最大的城市公园之一。除了著名的天文台外，公园内还有多条徒步路线、旧动物园遗址和旋转木马。站在山顶可以同时看到好莱坞标志和洛杉矶市中心的天际线。"
+        },
+        {
+          "poi_id": 3009,
+          "name": "威尼斯海滩 (Venice Beach)",
+          "category": "海滩",
+          "latitude": 33.9850,
+          "longitude": -118.4695,
+          "recommended_duration_min": 50,
+          "visit_order": 4,
+          "description": "威尼斯海滩是洛杉矶最有个性的海滩社区。著名的海滨步道上聚集了街头艺人、算命师和各色小贩。肌肉海滩的健身者和滑板公园的极限运动让这里充满活力。旁边的运河区则是另一番宁静的威尼斯风情。"
+        },
+        {
+          "poi_id": 3010,
+          "name": "圣莫尼卡山脉 (Santa Monica Mountains)",
+          "category": "自然保护区",
+          "latitude": 34.0750,
+          "longitude": -118.6520,
+          "recommended_duration_min": 70,
+          "visit_order": 5,
+          "description": "圣莫尼卡山脉横跨洛杉矶城区直达海岸，是城市边缘的自然天堂。这里有数十条难度各异的徒步路线，春天野花遍野，运气好还能遇到鹿群和老鹰。在日落时分登高远眺，太平洋在夕阳中变成一片金色。"
+        }
+      ]
+    },
+    "intent_data": {
+      "preference_factors": {
+        "factor_1": {"weight": 0.15, "label": "文化探索"},
+        "factor_2": {"weight": 0.40, "label": "自然风光"},
+        "factor_3": {"weight": 0.25, "label": "美食体验"},
+        "factor_4": {"weight": 0.20, "label": "休闲购物"}
+      },
+      "transfer_weights": {
+        "factor_1_alpha": 0.15,
+        "factor_2_alpha": 0.45,
+        "factor_3_alpha": 0.25,
+        "factor_4_alpha": 0.15
+      },
+      "city_group_preference": {
+        "cultural": 0.15,
+        "nature": 0.55,
+        "food": 0.18,
+        "shopping": 0.12
+      },
+      "reliability_score": 0.68,
+      "blend_weight_eta": 0.60
+    }
+  }
+]

@@ -1,0 +1,194 @@
+[
+  {
+    "city": "Osaka",
+    "scenario_name": "大阪美食之旅 - 接近模式",
+    "algorithm_type": "EKD-Trip",
+    "query_input": {
+      "start_poi": "Osaka Castle",
+      "end_poi": "Namba",
+      "start_time": 10,
+      "end_time": 20,
+      "num_pois": 5
+    },
+    "route_result": {
+      "route": [
+        {
+          "poi_id": 1101,
+          "name": "大阪城 (Osaka Castle)",
+          "category": "Historical Site",
+          "latitude": 34.6873,
+          "longitude": 135.5262,
+          "recommended_duration_min": 60,
+          "visit_order": 1
+        },
+        {
+          "poi_id": 1102,
+          "name": "道顿堀 (Dotonbori)",
+          "category": "Food Street",
+          "latitude": 34.6687,
+          "longitude": 135.5013,
+          "recommended_duration_min": 50,
+          "visit_order": 2
+        },
+        {
+          "poi_id": 1103,
+          "name": "心斋桥 (Shinsaibashi)",
+          "category": "Shopping District",
+          "latitude": 34.6748,
+          "longitude": 135.5010,
+          "recommended_duration_min": 45,
+          "visit_order": 3
+        },
+        {
+          "poi_id": 1104,
+          "name": "通天阁 (Tsutenkaku)",
+          "category": "Landmark",
+          "latitude": 34.6526,
+          "longitude": 135.5063,
+          "recommended_duration_min": 40,
+          "visit_order": 4
+        },
+        {
+          "poi_id": 1105,
+          "name": "难波 (Namba)",
+          "category": "Entertainment District",
+          "latitude": 34.6625,
+          "longitude": 135.5016,
+          "recommended_duration_min": 45,
+          "visit_order": 5
+        }
+      ]
+    },
+    "intent_data": {
+      "travel_mode": "approaching",
+      "travel_mode_confidence": 0.85,
+      "distance_to_destination_curve": [4.2, 2.8, 2.1, 1.5, 0.2],
+      "query_representation_similarity": 0.80
+    }
+  },
+  {
+    "city": "Osaka",
+    "scenario_name": "大阪城市探索 - 远离模式",
+    "algorithm_type": "EKD-Trip",
+    "query_input": {
+      "start_poi": "Namba",
+      "end_poi": "Tempozan",
+      "start_time": 9,
+      "end_time": 17,
+      "num_pois": 4
+    },
+    "route_result": {
+      "route": [
+        {
+          "poi_id": 1106,
+          "name": "难波 (Namba)",
+          "category": "Entertainment District",
+          "latitude": 34.6625,
+          "longitude": 135.5016,
+          "recommended_duration_min": 40,
+          "visit_order": 1
+        },
+        {
+          "poi_id": 1107,
+          "name": "梅田蓝天大厦 (Umeda Sky Building)",
+          "category": "Landmark",
+          "latitude": 34.7052,
+          "longitude": 135.4906,
+          "recommended_duration_min": 50,
+          "visit_order": 2
+        },
+        {
+          "poi_id": 1108,
+          "name": "大阪水族馆 (Osaka Aquarium Kaiyukan)",
+          "category": "Aquarium",
+          "latitude": 34.6545,
+          "longitude": 135.4290,
+          "recommended_duration_min": 90,
+          "visit_order": 3
+        },
+        {
+          "poi_id": 1109,
+          "name": "天保山 (Tempozan)",
+          "category": "Park",
+          "latitude": 34.6525,
+          "longitude": 135.4321,
+          "recommended_duration_min": 40,
+          "visit_order": 4
+        }
+      ]
+    },
+    "intent_data": {
+      "travel_mode": "moving_away",
+      "travel_mode_confidence": 0.81,
+      "distance_to_destination_curve": [0.3, 3.8, 6.2, 7.1],
+      "query_representation_similarity": 0.76
+    }
+  },
+  {
+    "city": "Osaka",
+    "scenario_name": "大阪经典路线 - U型模式",
+    "algorithm_type": "EKD-Trip",
+    "query_input": {
+      "start_poi": "Shinsekai",
+      "end_poi": "Dotonbori",
+      "start_time": 10,
+      "end_time": 19,
+      "num_pois": 5
+    },
+    "route_result": {
+      "route": [
+        {
+          "poi_id": 1110,
+          "name": "新世界 (Shinsekai)",
+          "category": "Entertainment District",
+          "latitude": 34.6521,
+          "longitude": 135.5061,
+          "recommended_duration_min": 45,
+          "visit_order": 1
+        },
+        {
+          "poi_id": 1111,
+          "name": "天王寺动物园 (Tennoji Zoo)",
+          "category": "Zoo",
+          "latitude": 34.6488,
+          "longitude": 135.5085,
+          "recommended_duration_min": 60,
+          "visit_order": 2
+        },
+        {
+          "poi_id": 1112,
+          "name": "阿倍野HARUKAS (Abeno Harukas)",
+          "category": "Landmark",
+          "latitude": 34.6462,
+          "longitude": 135.5150,
+          "recommended_duration_min": 50,
+          "visit_order": 3
+        },
+        {
+          "poi_id": 1113,
+          "name": "难波公园 (Namba Parks)",
+          "category": "Shopping Complex",
+          "latitude": 34.6595,
+          "longitude": 135.5018,
+          "recommended_duration_min": 40,
+          "visit_order": 4
+        },
+        {
+          "poi_id": 1114,
+          "name": "道顿堀 (Dotonbori)",
+          "category": "Food Street",
+          "latitude": 34.6687,
+          "longitude": 135.5013,
+          "recommended_duration_min": 50,
+          "visit_order": 5
+        }
+      ]
+    },
+    "intent_data": {
+      "travel_mode": "u_turn",
+      "travel_mode_confidence": 0.84,
+      "distance_to_destination_curve": [1.9, 2.3, 2.8, 1.2, 0.3],
+      "query_representation_similarity": 0.79
+    }
+  }
+]

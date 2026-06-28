@@ -1,0 +1,218 @@
+[
+  {
+    "city": "Tokyo",
+    "scenario_name": "东京经典一日游 - 接近模式",
+    "algorithm_type": "EKD-Trip",
+    "query_input": {
+      "start_poi": "Imperial Palace",
+      "end_poi": "Tokyo Skytree",
+      "start_time": 9,
+      "end_time": 18,
+      "num_pois": 5
+    },
+    "route_result": {
+      "route": [
+        {
+          "poi_id": 1001,
+          "name": "皇居 (Imperial Palace)",
+          "category": "历史遗迹",
+          "latitude": 35.6852,
+          "longitude": 139.7528,
+          "recommended_duration_min": 60,
+          "visit_order": 1,
+          "description": "作为日本天皇的居住地，皇居是日本的政治中心。您可以漫步在皇居外苑，欣赏著名的二重桥，这里是东京最适合拍照的地点之一。虽然内部通常不对外开放，但周围的护城河、石墙和广阔的绿地非常宁静，是感受东京历史底蕴的绝佳起点。"
+        },
+        {
+          "poi_id": 1002,
+          "name": "浅草寺 (Sensoji Temple)",
+          "category": "寺庙",
+          "latitude": 35.7148,
+          "longitude": 139.7967,
+          "recommended_duration_min": 45,
+          "visit_order": 2,
+          "description": "从皇居出发前往东京最古老的寺庙——浅草寺。穿过巨大的雷门灯笼，您就进入了仲见世通。这条热闹的商业街两旁挤满了出售传统小吃和手工艺品的店铺。在主殿祈福后，不妨在寺庙周围感受一下江户时代的下町风情。"
+        },
+        {
+          "poi_id": 1003,
+          "name": "上野公园 (Ueno Park)",
+          "category": "公园",
+          "latitude": 35.7146,
+          "longitude": 139.7732,
+          "recommended_duration_min": 50,
+          "visit_order": 3,
+          "description": "接下来前往被誉为\"文化之森\"的上野公园。这里是东京著名的赏樱胜地，也是一座巨大的文化综合体。您可以在园内漫步，参观东京国立博物馆或国立西洋美术馆（外观），或者只是在宽阔的草地上放松身心，感受当地人的休闲时光。"
+        },
+        {
+          "poi_id": 1004,
+          "name": "秋叶原 (Akihabara)",
+          "category": "购物区",
+          "latitude": 35.7023,
+          "longitude": 139.7745,
+          "recommended_duration_min": 40,
+          "visit_order": 4,
+          "description": "从上野向南移动，瞬间穿越到\"二次元\"的世界。秋叶原是全球动漫迷和电子爱好者的圣地。即使不购物，这里色彩斑斓的电器街、动漫周边商店和女仆咖啡厅也足以让人大开眼界。这里是体验日本现代御宅族文化的最佳地点。"
+        },
+        {
+          "poi_id": 1005,
+          "name": "东京晴空塔 (Tokyo Skytree)",
+          "category": "地标",
+          "latitude": 35.7101,
+          "longitude": 139.8107,
+          "recommended_duration_min": 60,
+          "visit_order": 5,
+          "description": "行程的最后一站来到东京的最新地标——东京晴空塔。作为世界最高的自立式电波塔，您可以登上天望甲板（350米）或天望回廊（450米），俯瞰整个关东平原的壮丽景色。如果在傍晚时分抵达，还能欣赏到绝美的东京夜景，为完美的一天画上句号。"
+        }
+      ]
+    },
+    "intent_data": {
+      "travel_mode": "approaching",
+      "travel_mode_confidence": 0.87,
+      "distance_to_destination_curve": [5.8, 3.2, 2.8, 2.1, 0.3],
+      "query_representation_similarity": 0.82
+    }
+  },
+  {
+    "city": "Tokyo",
+    "scenario_name": "东京文化探索 - U型模式",
+    "algorithm_type": "EKD-Trip",
+    "query_input": {
+      "start_poi": "Meiji Shrine",
+      "end_poi": "Roppongi Hills",
+      "start_time": 10,
+      "end_time": 19,
+      "num_pois": 5
+    },
+    "route_result": {
+      "route": [
+        {
+          "poi_id": 1006,
+          "name": "明治神宫 (Meiji Shrine)",
+          "category": "神社",
+          "latitude": 35.6764,
+          "longitude": 139.6993,
+          "recommended_duration_min": 60,
+          "visit_order": 1,
+          "description": "明治神宫是东京最大的神社，坐落在一片静谧的原始森林中。穿过巨大的木制�的鸟居门，沿着林荫参道前行，世俗的喧嚣仿佛被隔绝在外。这里供奉着明治天皇和昭宪皇太后，是感受日本传统神道文化的最佳场所。"
+        },
+        {
+          "poi_id": 1007,
+          "name": "原宿 (Harajuku)",
+          "category": "购物区",
+          "latitude": 35.6702,
+          "longitude": 139.7026,
+          "recommended_duration_min": 45,
+          "visit_order": 2,
+          "description": "走出明治神宫便是东京最时尚的街区——原宿。竹下通两旁挤满了潮流服饰店、甜品店和个性小店，是观察日本青年文化的窗口。如果喜欢安静一些的氛围，可以转入表参道，欣赏国际品牌旗舰店的建筑设计。"
+        },
+        {
+          "poi_id": 1008,
+          "name": "新宿御苑 (Shinjuku Gyoen)",
+          "category": "庭园",
+          "latitude": 35.6852,
+          "longitude": 139.7100,
+          "recommended_duration_min": 50,
+          "visit_order": 3,
+          "description": "新宿御苑融合了日式、英式和法式三种庭园风格，是都市中的绿洲。春天有1000多棵樱花树竞相绽放，秋天则是金黄色银杏和火红枫叶的天堂。在广阔的草坪上席地而坐，享受片刻宁静。"
+        },
+        {
+          "poi_id": 1009,
+          "name": "东京塔 (Tokyo Tower)",
+          "category": "地标",
+          "latitude": 35.6586,
+          "longitude": 139.7454,
+          "recommended_duration_min": 45,
+          "visit_order": 4,
+          "description": "这座1958年建成的红色铁塔至今仍是东京最具辨识度的地标之一。虽然高度已被晴空塔超越，但东京塔独特的橙红色身影承载着几代人的记忆。登上展望台可以360度俯瞰东京市区，夜晚灯光亮起时格外浪漫。"
+        },
+        {
+          "poi_id": 1010,
+          "name": "六本木之丘 (Roppongi Hills)",
+          "category": "综合娱乐",
+          "latitude": 35.6605,
+          "longitude": 139.7292,
+          "recommended_duration_min": 40,
+          "visit_order": 5,
+          "description": "六本木之丘是集艺术、购物、美食和夜景于一体的综合城市中心。52楼的展望台\"Tokyo City View\"提供无遮挡的城市全景，天台Sky Deck更是露天观景的绝佳去处。区域内的森美术馆经常举办国际级当代艺术展览。"
+        }
+      ]
+    },
+    "intent_data": {
+      "travel_mode": "u_turn",
+      "travel_mode_confidence": 0.83,
+      "distance_to_destination_curve": [2.9, 3.4, 4.1, 2.3, 0.5],
+      "query_representation_similarity": 0.78
+    }
+  },
+  {
+    "city": "Tokyo",
+    "scenario_name": "东京随性漫步 - 不规则模式",
+    "algorithm_type": "EKD-Trip",
+    "query_input": {
+      "start_poi": "Tsukiji Outer Market",
+      "end_poi": "Ikebukuro",
+      "start_time": 9,
+      "end_time": 20,
+      "num_pois": 5
+    },
+    "route_result": {
+      "route": [
+        {
+          "poi_id": 1011,
+          "name": "筑地场外市场 (Tsukiji Outer Market)",
+          "category": "市场",
+          "latitude": 35.6654,
+          "longitude": 139.7707,
+          "recommended_duration_min": 50,
+          "visit_order": 1,
+          "description": "虽然筑地内市场已搬迁至丰洲，但场外市场依然充满活力。这里有超过400家店铺和餐厅，您可以品尝新鲜的寿司、玉子烧和海鲜丼。清晨到访可以体验最地道的东京早餐文化。"
+        },
+        {
+          "poi_id": 1012,
+          "name": "台场 (Odaiba)",
+          "category": "娱乐区",
+          "latitude": 35.6267,
+          "longitude": 139.7762,
+          "recommended_duration_min": 60,
+          "visit_order": 2,
+          "description": "乘坐百合鸥号无人驾驶列车跨越彩虹桥来到台场，这里是东京的未来感娱乐天堂。自由女神像复制品、巨大的高达立像和teamLab数字艺术美术馆都在这里。沿着海滨公园散步，可以欣赏彩虹桥和东京市区的壮丽天际线。"
+        },
+        {
+          "poi_id": 1013,
+          "name": "银座 (Ginza)",
+          "category": "购物区",
+          "latitude": 35.6717,
+          "longitude": 139.7649,
+          "recommended_duration_min": 45,
+          "visit_order": 3,
+          "description": "银座是东京最高端的商业街区，国际奢侈品牌的旗舰店鳞次栉比。即使不购物，欣赏各大品牌精心设计的建筑外观也是一种享受。周末中央通会变成步行者天堂，可以悠然地在马路中央漫步。"
+        },
+        {
+          "poi_id": 1014,
+          "name": "涩谷 (Shibuya)",
+          "category": "娱乐区",
+          "latitude": 35.6580,
+          "longitude": 139.7016,
+          "recommended_duration_min": 50,
+          "visit_order": 4,
+          "description": "涩谷十字路口是世界上最繁忙的行人过路口，每次信号灯变绿时多达3000人同时横穿，场面壮观。忠犬八公像就在车站前方。附近的涩谷Sky展望台可以从230米高空俯瞰这一壮景。"
+        },
+        {
+          "poi_id": 1015,
+          "name": "池袋 (Ikebukuro)",
+          "category": "商业区",
+          "latitude": 35.7295,
+          "longitude": 139.7109,
+          "recommended_duration_min": 40,
+          "visit_order": 5,
+          "description": "池袋是东京的另一大商业中心，Sunshine City综合体内有水族馆、展望台和多个主题乐园。这里也是动漫文化的重要据点，乙女路上聚集了大量面向女性的动漫周边商店，与秋叶原形成有趣的对比。"
+        }
+      ]
+    },
+    "intent_data": {
+      "travel_mode": "irregular",
+      "travel_mode_confidence": 0.65,
+      "distance_to_destination_curve": [8.2, 13.5, 7.1, 9.8, 0.4],
+      "query_representation_similarity": 0.61
+    }
+  }
+]
